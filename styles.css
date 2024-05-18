@@ -1,3 +1,10 @@
+:root{
+    --light-pink: #f2e3e6;
+    --mild-pink: #ed83b5;
+    --dark-pink: #ec297b;
+    --yellow: #fff486;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -5,5 +12,27 @@
 }
 
 body{
-    background-color: #f2e3e6;
+    background-color: var(--mild-pink);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    background-color: var(--light-pink);
+    border-bottom: 5px solid var(--yellow);
+    width: 100%;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
 }
