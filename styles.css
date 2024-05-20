@@ -51,9 +51,41 @@ body{
   min-height: 60vh;
   position: relative;
   text-align: center;
-  padding-top: 130px;
+  padding-top: 200px;
+}
+
+.herocontent{
+  width: 100%;
 }
 
 .title{
   font-size: 2.5rem;
 }
+
+.form-container{
+  margin-top: 20px;
+}
+
+#form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#email{
+  line-height: 25px;
+  padding-right: 50px;
+}
+
+#submit{
+  background-color: var(--yellow);
+  padding: 5px;
+  color: black;
+  font-family: "League Spartan";
+  font-size: large;
+}
+
+input[type="email"]{
+  margin-bottom: 10px;
+}
+
