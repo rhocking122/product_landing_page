@@ -48,7 +48,7 @@ body{
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  min-height: 60vh;
+  min-height: 50vh;
   position: relative;
   text-align: center;
   padding-top: 200px;
@@ -95,7 +95,9 @@ body{
 }
 
 #features{
-  margin-top: 30px;
+  margin-top: 20px;
+  padding-bottom: 70px;
+  background-image: linear-gradient(to bottom, var(--mild-pink), var(--dark-pink)); /* Define the linear gradient */
 }
 
 #features .icon{
@@ -105,4 +107,30 @@ body{
   height: 125px;
   width: 20vw;
   color: var(--yellow);
+}
+
+#features .description{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 5px;
+  height: 125px;
+  width: 70vw;
+}
+
+.grid{
+  display: flex;
+}
+
+.grid h2{
+  font-size: 2.7rem;
+  color: var(--light-pink);
+}
+
+.grid p{
+  line-height: 1.5rem;
+  font-style: none;
+  font-weight: 100;
+  font-size: 1.2rem;
 }
