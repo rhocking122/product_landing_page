@@ -72,20 +72,37 @@ body{
   align-items: center;
 }
 
-#email{
-  line-height: 25px;
-  padding-right: 50px;
-}
-
-#submit{
-  background-color: var(--yellow);
+#hero input[type='email'] {
+  max-width: 275px;
+  width: 100%;
   padding: 5px;
-  color: black;
-  font-family: "League Spartan";
-  font-size: large;
 }
 
-input[type="email"]{
-  margin-bottom: 10px;
+#hero input[type='submit'] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: var(--yellow);
+  font-family: "League spartan";
 }
 
+#hero input[type='submit']:hover{
+  cursor: pointer;
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+#features{
+  margin-top: 30px;
+}
+
+#features .icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: var(--yellow);
+}
