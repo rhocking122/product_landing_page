@@ -29,6 +29,7 @@ body{
     border-bottom: 5px solid var(--yellow);
     width: 100%;
     padding: 10px 20px;
+    z-index: 10;
 }
 
 #nav-bar a{
@@ -41,4 +42,18 @@ body{
 #nav-bar a:hover{
   background-color: var(--yellow);
   transition: .5s;
+}
+
+#hero{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 60vh;
+  position: relative;
+  text-align: center;
+  padding-top: 130px;
+}
+
+.title{
+  font-size: 2.5rem;
 }

@@ -1,37 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/393393f2ef.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Rebel Product Landing Page</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@900&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/393393f2ef.js" crossorigin="anonymous"></script>
-  <title>Rebel Product Landing Page</title>
-</head>
-
-<body>
-  <header id="header" class="header">
-    <img src="./images/rebel01.png" alt="Rebel Streetwear clothing logo" class="logo" id="header-img" loading="lazy"
-      width="200" />
-    <nav id="nav-bar">
-        <a  class="nav-link" href="#about-us">About us</a>
-        <a class="nav-link" href="#contact-us">Contact us</a>
+  <body>
+    <header id="header" class="header">
+      <img
+        src="./images/rebel01.png"
+        alt="Rebel Streetwear clothing logo"
+        class="logo"
+        id="header-img"
+        loading="lazy"
+        width="200"
+      />
+      <nav id="nav-bar">
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#about-us">About us</a>
         <a class="nav-link" href="#collections">Collections</a>
-    </nav>
-    <div class="search-cart">
-      <input type="text" placeholder="search">
-      <i class="fa-solid fa-cart-shopping"></i>  
-    </div>
-  </header>
-  <main class="homepage">
-    <section class="about" id="about-us"></section>
-    <section class="contact" id="contact-us"></section>
-    <footer class="us" id="collections"></footer>
-  </main>
-</body>
+      </nav>
+      <div class="search-cart">
+        <input type="text" placeholder="search" />
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+    </header>
 
+    <section id="hero">
+      <h1 class="title">Handcrafted, Made-to-order streetwear</h1>
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email address"
+          required
+        />
+        <input type="submit" id="submit" value="Get Started" class="button" />
+      </form>
+    </section>
+
+    <div class="container">
+      <section id="features">
+        <div class="grid">
+          <div class="icon"><i class="fa-solid fa-earth-americas"></i></div>
+          <div class="description">
+            <h2>Premium Materials</h2>
+            <p>
+              Our clothes are made from the best locally source fabric. This
+              ensures the best quality for our custoemrs.
+            </p>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <div class="description">
+            <h2>Fast Shipping</h2>
+            <p>
+              We want to mak sure you receive your clothing as soon as possible.
+              so then you can strut your stuff!
+            </p>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="icon"><i class="fa-solid fa-ranking-star"></i></div>
+          <div class="description">
+            <h2>Quality assurance</h2>
+            <p>
+              We assure you that when you make a purchase with us there will be
+              no damages or fualts on our end. You will be receiving the best
+              clothes you have ever bought in your life!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about-us">
+        <iframe
+          id="video"
+          width="500"
+          height="315"
+          src="https://www.youtube.com/embed/F5Gy5vE3WeU?si=Qv1M0Q7IfCklYs_9"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <section id="collections">
+        <div class="pricing">
+          <div class="level">Summer 2024 Collection</div>
+          <h2>Launches May 17, 2024</h2>
+          <img src="./images/summer_clothing.jpg" alt="our summer clothing">
+          <button class="button">Select</button>
+        </div>
+        <div class="pricing">
+          <div class="level">Fall 2024 Collection</div>
+          <h2>Launches Sept. 10, 2024</h2>
+          <img src="./images/fall_clothing.jpg" alt="our summer clothing">
+          <button class="button">Select</button>
+        </div>
+        <div class="pricing">
+          <div class="level">Spring 2024 Collection</div>
+          <h2>Launches Jan. 24, 2025</h2>
+          <img src="./images/spring_clothing.jpg" alt="our summer clothing">
+          <button class="button">Select</button>
+        </div>
+      </section>
+      <footer>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <span>Copyright 2024, Original Rebel Streetwear</span>
+      </footer>
+    </div>
+  </body>
 </html>
