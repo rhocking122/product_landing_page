@@ -134,3 +134,90 @@ body{
   font-weight: 100;
   font-size: 1.2rem;
 }
+
+.about{
+  background-image: linear-gradient(to top, var(--mild-pink) 5%, var(--dark-pink)); /* Define the linear gradient */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+#collections{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 60px;
+}
+
+.pricing{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100%/3);
+  margin: 10px;
+  border: 5px solid var(--yellow);
+  border-radius: 3px;
+}
+
+.pricing .level{
+  background-color: var(--light-pink);
+  color: var(--dark-pink);
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.pricing h3{
+  margin-top: 15px;
+}
+
+.pricing img{
+  height: 275px;
+  width: 225px;
+}
+
+.button{
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: var(--yellow);
+  font-family: "League spartan";
+}
+
+.button:hover{
+  cursor: pointer;
+  background-color: orange;
+  transition: 1s;
+}
+
+footer{
+  margin-top: 20px;
+  background-color: var(--light-pink);
+  padding: 20px;
+}
+
+footer ul{
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer a{
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+footer span{
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9rem;
+  color: #444;
+  font-style: italic;
+}
