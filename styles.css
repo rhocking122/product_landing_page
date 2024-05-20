@@ -12,27 +12,40 @@
 }
 
 body{
+    margin: 0;
     background-color: var(--mild-pink);
+    font-family: "League Spartan", sans-serif;
 }
 
-header{
+.header{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     background-color: var(--light-pink);
     border-bottom: 5px solid var(--yellow);
     width: 100%;
+    padding: 10px 20px;
 }
 
-.nav-links{
+#nav-bar{
     display: flex;
+    font-weight: 600;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+#nav-bar li{
     list-style: none;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: black;
+#nav-bar a{
+    display: block;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: large;
+    transition: text-indent .3s ease-in-out;
+    color: var(--dark-pink);
+    font-family: "League Spartan", sans-serif;
 }
