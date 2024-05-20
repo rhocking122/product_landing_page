@@ -15,6 +15,8 @@ body{
     margin: 0;
     background-color: var(--mild-pink);
     font-family: "League Spartan", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .header{
@@ -31,21 +33,18 @@ body{
 
 #nav-bar{
     display: flex;
-    font-weight: 600;
-    font-style: normal;
-    font-optical-sizing: auto;
+    flex-direction: row;
+    padding: 0;
+    gap: 20px;
 }
 
-#nav-bar li{
-    list-style: none;
+.nav-link{
+  text-decoration: none;
+  color: var(--dark-pink);
+  padding: 8px 16px;
+  display: inline-block;
 }
 
-#nav-bar a{
-    display: block;
-    padding: 10px 30px;
-    cursor: pointer;
-    font-size: large;
-    transition: text-indent .3s ease-in-out;
-    color: var(--dark-pink);
-    font-family: "League Spartan", sans-serif;
+#nav-bar li:hover{
+  background-color: var(--yellow);
 }
