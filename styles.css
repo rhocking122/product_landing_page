@@ -221,3 +221,64 @@ footer span{
   color: #444;
   font-style: italic;
 }
+
+/* Adjustments for screens smaller than 768px (typical phones) */
+@media only screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px; /* Adjust padding for better spacing */
+  }
+
+  #nav-bar {
+    margin-top: 10px; /* Adjust margin for better spacing */
+  }
+
+  .search-cart {
+    margin-top: 10px; /* Adjust margin for better spacing */
+  }
+
+  #hero {
+    padding-top: 150px; /* Adjust padding for better spacing */
+  }
+
+  .title {
+    font-size: 2rem; /* Decrease font size for better readability */
+  }
+
+  .form-container {
+    margin-top: 15px; /* Adjust margin for better spacing */
+  }
+
+  #form input[type='email'],
+  #form input[type='submit'] {
+    max-width: 250px; /* Adjust input width for better fit */
+  }
+
+  #features .description,
+  .grid h2,
+  .grid p {
+    font-size: 1.2rem; /* Decrease font size for better readability */
+  }
+
+  .pricing img {
+    height: auto; /* Make images responsive */
+    width: 100%; /* Ensure images take full width */
+  }
+}
+
+/* Adjustments for screens smaller than 480px (small phones) */
+@media only screen and (max-width: 480px) {
+  .header {
+    padding: 5px; /* Further reduce padding for smaller screens */
+  }
+
+  .title {
+    font-size: 1.8rem; /* Further reduce font size for smaller screens */
+  }
+
+  #form input[type='email'],
+  #form input[type='submit'] {
+    max-width: 200px; /* Further reduce input width for smaller screens */
+  }
+}
