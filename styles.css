@@ -30,15 +30,12 @@ body{
     width: 100%;
     padding: 10px 20px;
 }
-.nav-link{
-  padding: 8px 16px;
-  display: inline-block;
-  
-}
 
 #nav-bar a{
   text-decoration: none;
   color: var(--dark-pink);
+  padding: 8px 16px;
+  display: inline-block;
 }
 
 #nav-bar a:hover{
