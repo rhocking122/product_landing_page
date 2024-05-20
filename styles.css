@@ -33,6 +33,7 @@ body{
 .nav-link{
   padding: 8px 16px;
   display: inline-block;
+  
 }
 
 #nav-bar a{
@@ -40,7 +41,7 @@ body{
   color: var(--dark-pink);
 }
 
-#nav-bar li:hover{
+#nav-bar a:hover{
   background-color: var(--yellow);
-  cursor: pointer;
+  transition: .5s;
 }
