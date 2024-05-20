@@ -30,14 +30,6 @@ body{
     width: 100%;
     padding: 10px 20px;
 }
-
-#nav-bar{
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-    gap: 20px;
-}
-
 .nav-link{
   text-decoration: none;
   color: var(--dark-pink);
@@ -47,4 +39,5 @@ body{
 
 #nav-bar li:hover{
   background-color: var(--yellow);
+  cursor: pointer;
 }
